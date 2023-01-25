@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+        
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="WebDevHome.html"><img src="Images/homeicon.png" >HOME</a></li>
+                    <li class="active"><a href="WebDevStore.html"><img src="Images/storeicon.png">STORE</a></li>
+                    <li><a href="WebDevAbout.html"><img src="Images/abouticon.png">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">JB JEWELLERS</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">JB JEWELLERS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Necklaces</span>
+                    <img class="shop-item-image" src="Images/Necklace.jpg" height="100%" width="100%">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button onclick="fn1()" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                <div><p>Select material:</p>
+                    <input type="radio" id="Copper1" name="Necklaces" value="Copper" checked>
+                    <label for="Copper">Copper</label><br>
+                    <input type="radio" id="Silver1" name="Necklaces" value="Silver">
+                    <label for="Silver">Silver</label><br>
+                    <input type="radio" id="Gold1" name="Necklaces" value="Gold">
+                    <label for="Gold">Gold</label>
+                </div>
+                      
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Pendants</span>
+                    <img class="shop-item-image" src="Images/Pendants101.jpg" height="100%" width="100%">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button onclick="fn2()" class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                    <p>Select material:</p>
+<input type="radio" id="Copper2" name="Pendants" value="Copper" checked>
+<label for="Copper">Copper</label><br>
+<input type="radio" id="Silver2" name="Pendants" value="Silver">
+<label for="Silver">Silver</label><br>
+<input type="radio" id="Gold2" name="Pendants" value="Gold">
+<label for="Gold">Gold</label>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Chains</span>
+                    <img class="shop-item-image" src="Images/Image1.jpg" height="100%" width="100%">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button onclick="fn3()" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                    <p>Select material:</p>
+<input type="radio" id="Copper3" name="Chains" value="Copper" checked>
+<label for="Copper">Copper</label><br>
+<input type="radio" id="Silver3" name="Chains" value="Silver">
+<label for="Silver">Silver</label><br>
+<input type="radio" id="Gold3" name="Chains" value="Gold">
+<label for="Gold">Gold</label>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Ear Rings</span>
+                    <img class="shop-item-image" src="Images/Image5.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button onclick="fn4()" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                    <p>Select material:</p>
+<input type="radio" id="Copper4" name="Ear Rings" value="Copper" checked>
+<label for="Copper">Copper</label><br>
+<input type="radio" id="Silver4" name="Ear Rings" value="Silver">
+<label for="Silver">Silver</label><br>
+<input type="radio" id="Gold4" name="Ear Rings" value="Gold">
+<label for="Gold">Gold</label>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Bangles</span>
+                    <img class="shop-item-image" src="Images/Image3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button onclick="fn5()" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div> 
+                    <p>Select material:</p>
+<input type="radio" id="Copper5" name="Bangles" value="Copper" checked>
+<label for="Copper">Copper</label><br>
+<input type="radio" id="Silver5" name="Bangles" value="Silver">
+<label for="Silver">Silver</label><br>
+<input type="radio" id="Gold5" name="Bangles" value="Gold">
+<label for="Gold">Gold</label>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Rings</span>
+                    <img class="shop-item-image" src="Images/store01.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button onclick="fn6()" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                    <p>Select material:</p>
+<input type="radio" id="Copper6" name="Rings" value="Copper" checked>
+<label for="Copper">Copper</label><br>
+<input type="radio" id="Silver6" name="Rings" value="Silver">
+<label for="Silver">Silver</label><br>
+<input type="radio" id="Gold6" name="Rings" value="Gold">
+<label for="Gold">Gold</label>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">JB JEWELLERS</h3>
+                <tr>
+                    <td colspan="3">&copy;Copyright</td>
+         </tr>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://youtu.be/cRLhQRaxGj8" target="_blank">
+                            <img src="Images/youtubeplaybutton.png" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

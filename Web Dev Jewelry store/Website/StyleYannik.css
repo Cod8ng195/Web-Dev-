@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/ImageBackgound.jpg");
+    height: 50vh;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.band-name {
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: .25px;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.shop-item{
+   margin: 30px;
+}
+
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image{
+    height: 250px;
+}
+.ite{
+    margin-right: 10%;
+}
+
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price{
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10%;
+}
+
+.btn-primary{
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #2d9cdb;
+}
+
+.shopping-busket-header{
+    font-weight: bold;
+    font-size: 1.2px;
+    color: #333;
+}
+
+.shopping-busket-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.shopping-busket-row{
+    display: flex;
+}
+
+.shopping-busket-item{
+    width: 45%;
+}
+
+
+.shopping-busket-price{
+   width: 20%;
+   font-size: 1.2px;
+   color: #333;
+}
+
+.shopping-busket-quantity{
+   width: 35%;
+}
+
+.shopping-busket-item-title{
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2px;
+}
+
+.shopping-busket-item-image{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover{
+    background-color: #CC4C4C;
+}
+
+.shopping-busket-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid  #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2px;
+    margin-right: 25px;
+}
+
+.shopping-busket-row:last-child{
+    border-bottom: 1px solid black;
+}
+
+.shopping-busket-row:last-child  .shopping-busket-column{
+    border: none;
+}
+
+.shopping-busket-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.shopping-busket-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.shopping-busket-total-price{
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.5em;
+}
+/*How to make the hover slower*/
+.btnY{
+    transition: 0.6s ease-in-out;
+}
+
+ul li.active a{
+    background-color: #2d9cdb;
+    color: #333;
+}
+
+.link{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #333;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0; 
+}
+
+.link:hover{
+    color: #2d9cdb;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,  0,  0, .1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown > .link:focus + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+}

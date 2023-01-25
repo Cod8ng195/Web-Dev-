@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Sansita+Swashed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Metal+Mania&family=Sansita+Swashed&family=Zeyada&display=swap');
+/*Code for the About page*/
+html{
+    background-color: azure;
+}
+*{
+    box-sizing: border-box;
+    font-family: kurale;
+    color: rgb(146, 140, 140);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: Inline; 
+}
+
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+    /*transition to slow down the rate at which the colour disappears*/
+    transition: 0.6s ease;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgb(255, 255, 255, .3);
+    color: azure;
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+.nav a :hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+.main-header{
+    background-color: rgba(0,0,0, .6);
+    background-image: url(Images/Header\ Background.jpg);
+    background-size: cover;
+    /*fixing the size of the background image*/
+    height: 70vh;
+    background-position: center;
+    background-blend-mode: multiply;
+    padding-bottom: 50px;
+}
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+.band-name-large{
+    font-size: 6em;
+}
+.content-section{
+    margin: 1em;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header{
+    font-family: Metal mania;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 3.5em;
+}
+.about-band-image{
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.main-footer{
+    background-color: #5c6264;
+    color: white;
+    padding: 0 25px;
+}
+.band-name{
+    color:#eee7e7;
+}
+.main-footer-container{
+    display: flex;
+    font-size: normal;
+    align-items: center;
+}
+.main-footer-container ul{
+    flex-grow: 1em;
+    text-align: end;
+}
+.footer-nav li{
+    padding:0 .3em;
+    padding-bottom: 0 .5em; 
+}
+.footer-nav img{
+    width: 20px;
+    height: 20px;
+}
+/*ENDS HERE*/
+/*this is code for the bottons on the home page, including the play buttons*/
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .70em;
+    cursor: pointer;
+}
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #92d4f2;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+    transition: .6s ease;
+}
+.btn-header:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play{
+    display: block;
+    margin: 0 auto;
+    color: #92d4f2;
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+} 
+
+.Home-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+.Home-row:last-child{
+    border-bottom: none;
+}
+.Home-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+.Home-one{
+    width: 24%;
+}
+.home-two{
+    width: 42%;
+}
+.Home-btn{
+    max-width: 19%;
+}
+.btn-primary{
+    color: white;
+    background-color: #92d4f2;
+    border: none;
+    border-radius: 1em;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: rgba(8, 65, 65, 0.63);
+}
+/*STARTcode for styling the store*/
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*code for the cart section*/
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+/*ENDS code for styling the store*/
+/*code for making my home page even more beautiful*/
+ul li a:hover{
+    background-color: #777;
+    color: #000;
+}
+ul li.active a{
+    background-color: #777;
+    color: #000;
+}
+.Button{
+    text-align: end;
+    
+}
+.btnS:hover{
+    background-color: #777;
+    color: #000;
+}
+.btnS{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    margin: 0;
+    border: 1px solid #92d4f2;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.Search{
+    width: 3 30px;
+    float: left;
+    margin-left: 270px;
+    text-align: end;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid#92d4f2;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    align-content: flex-start;
+}
+.btnB{
+    width: 100px;
+    height: 30px;
+    background: #86898a;
+    border: 2px #86898a;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btnB:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+/*End*/
+/*Code for the Login Info*/
+.container {
+    position: relative;
+    border-radius: 5px;
+    padding: 20px 0 30px 0;
+}
+.btnA {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+.btnA:hover{
+    background-color: rgb(226, 216, 216);
+    color: #000;
+}
+input[type=submit]:hover {
+    background-color:#777;
+  }
+  .col {
+    float:left;
+    width: 100%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .inner {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  /* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
